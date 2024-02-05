@@ -17,15 +17,20 @@ This is a simple web-based to-do list maker created using HTML, CSS, and JavaScr
 
 ## Preview
 
-Include a screenshot or GIF of your application in action.
+![image_2024-02-05_200035470](https://github.com/mhdfaizjabir/ToDo/assets/91936520/e1a62eba-20d6-43b7-94b7-ef5bc56c3a8e)
+
 
 ## How to Run
 
 Simply open the `index.html` file in a web browser.
+or
+You can Run it thru the link if will be provided.
 
 ## Author
 
 [Mohammad Faiz Jabir](#)
+
+
 
 Made with ❤️ by Mohammad Faiz Jabir.
 
