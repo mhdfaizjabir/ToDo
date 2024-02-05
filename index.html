@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Maker</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+<div class="loading" id="loading">
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+</div>
+
+<div class="todo-container" style="display:none;">
+    <h1>Goal</h1>
+    <input type="text" id="taskInput" placeholder="Your goals!">
+    <button onclick="addTask()">Add goal</button>
+    <ul id="taskList"></ul>
+    <small onclick="clearTasks()">Clear All</small>
+</div>
+
+<div>
+    <p><a id="name" href="https://github.com/mhdfaizjabir" target=”_blank”  > Made with love by Mohammad Faiz Jabir<span id='heart'> &#10084;</span></a> </p>
+</div>
+<script src="todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #6495ED;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    height: 100vh;
+    overflow: hidden; /* Hide overflow to prevent scrollbar during loading */
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff; /* White background for the expanding effect */
+    z-index: 1000; /* Make sure it's on top of other elements */
+    animation: expandLoader 2s forwards; /* Expand loader animation */
+}
+
+.spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    background-color: #3498db; /* Blue background for spinner */
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite; /* Pulse animation */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes expandLoader {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(80); /* Adjust the scale factor based on your needs */
+        opacity: 0; /* Fade out during expansion */
+    }
+}
+
+.todo-container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px; 
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+p{
+    text-decoration: underline;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+li.done {
+    text-decoration: line-through;
+    color: #888;
+}
+
+small {
+    font-size: 12px;
+    cursor: pointer;
+    color: #888;
+}
+
+#heart {
+    color: rgb(223, 86, 86); 
+}
+#name{
+    color:black;
+}
